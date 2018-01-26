@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mp06_practica;
 
-/**
- *
- * @author Dana
- */
-public class Producte {
+import java.io.Serializable;
+
+
+public class Producte implements Serializable{
      int id_producte;
      String nom;
      String origen;

@@ -1,6 +1,8 @@
 package mp06_practica;
 
-public class UnitatMesura {
+import java.io.Serializable;
+
+public class UnitatMesura implements Serializable{
      private String id_unitat;
      private String descripcio;
      
