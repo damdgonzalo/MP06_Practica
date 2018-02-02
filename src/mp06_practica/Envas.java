@@ -6,14 +6,22 @@
 package mp06_practica;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
  * @author xaviercastillo
  */
-public class Envas implements Serializable{
-    
+
+@Entity
+@Table(name="Envas")
+public class Envas implements Serializable {
+     
     private int id_envas;
+    
     private String id_unitat;
     private String tipus;
     private double capacitat;
@@ -30,7 +38,8 @@ public class Envas implements Serializable{
     }
     
     
-
+    @Id
+    @Column(name="id_envas")
     public int getId_envas() {
         return id_envas;
     }
